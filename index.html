@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Garcia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- cabecera de la pagina -->
+    <header>
+
+        <!-- menu de navegacion de la pagina -->
+        <nav class="nav-main">
+            <!-- funcion para cuando se clique inicio vaya hacia arriba -->
+            <a href="index.html">Inicio</a>
+            <a href="ventas.html">Ver Ofertas</a>
+            <a href="informacion.html">Información y comentarios</a>
+            <a href="formulario.html">Contactanos</a>
+            <input class="search-input" type="text" placeholder="Busqueda...">
+        </nav>
+
+    </header>
+
+    <!-- parte principal de la pagina (main) -->
+    <main id="index-main">
+        <!-- parte principal de la pagina -->
+        <article id="article-main" class="difuminado">
+            <h1>Encuentra los mejores pisos, viviendas y oficinas</h1>
+            <p>Descubre el hogar de tus sueños con nosotros. Ofrecemos una amplia selección de propiedades, desde
+                acogedores apartamentos hasta espaciosas casas familiares.
+                Explora nuestras opciones cuidadosamente seleccionadas, diseñadas para satisfacer tus necesidades y
+                brindarte comodidad. Encuentra la casa perfecta para ti y tu familia.
+                Con ubicaciones estratégicas en vecindarios vibrantes, nuestras propiedades ofrecen acceso fácil a
+                servicios, escuelas y áreas recreativas. La vida que deseas comienza aquí.
+                Nuestro equipo de expertos en bienes raíces está listo para ayudarte en cada paso del proceso de compra.
+                Haz realidad tu sueño de tener un hogar propio con nosotros.
+                Bienvenido a un nuevo capítulo en tu vida, ¡donde cada casa cuenta una historia única!
+            </p>
+        </article>
+
+        <article id="casa-ejemplo" class="difuminado">
+            <div>
+                <h1>Casa CR7</h1>
+                <p>9.200.000€</p>
+            </div>
+            <!-- utilizo "this" para referirme al mismo nodo a la hora de llamar la funcion, en este caso de la imagen con la id imagenCR7 -->
+            <img id="imagenCR7" onclick="ampliar(this)" src="images/cr7siii.jpg" alt="casa del bicho cr7 cristiano ronaldo">
+        </article>
+
+    </main>
+
+    <footer>
+
+        <div class="info">
+            <h1>Web Inmobiliaria</h1>
+            <p>Ten mayor presencia digital con una web personalizable, diseñada con las mejores prácticas para obtener
+                lo mejores resultados online.</p>
+        </div>
+        <div class="info">
+            <h1>Portales Inmobiliarios</h1>
+            <p>Publicación simultánea de los inmuebles de su página en portales inmobiliarios líderes en todo el mundo.
+                Sin cargar varias plataformas.</p>
+        </div>
+        <div class="info">
+            <h1>Redes Sociales</h1>
+            <p>Divulgación y actualización sincronizada de sus inmuebles en sus páginas en redes sociales (Facebook,
+                WhatsApp, G+, YouTube, etc).</p>
+        </div>
+        <div class="info">
+            <h1>Marketing Digital</h1>
+            <p>El software de gestión más completo del mercado, que permite gestionar los inmuebles, contactos,
+                seguimiento de operaciones y equipos de manera fácil e intuitiva.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="ampliarImagen.js"></script>
+</body>
+
+</html>

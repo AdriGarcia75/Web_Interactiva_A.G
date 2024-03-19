@@ -1,0 +1,40 @@
+#informacion-main{
+    color: white;
+    background-color: #1A1A1A;
+    width: 100%;
+    padding: 10px;
+    height: fit-content;
+}
+
+#informacion{
+    width: 70%;
+}
+
+#comentario-main{
+    width: 30%;
+    font-size: 20px;
+}
+
+#comentarios{
+    font-style: bold;
+    height: 30px;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* este html es bastante sencillo y el HTML de Informacion hereda tambien la media query de movil definida en STYLE (el css principal) */
+@media only screen and (max-width: 768px) {
+    #informacion-main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

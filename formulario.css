@@ -1,0 +1,96 @@
+#main-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+#main-formulario input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+/* media query para móviles */
+/* no necesario del todo ya que el formulario ya se adapta bien al ser flexible */
+@media only screen and (max-width: 600px) {
+    header nav a {
+        width: fit-content;
+        height: auto;
+    }
+    
+    main {
+        padding: 20px; /* añado un pequeño padding a los lados para que sea mas estetico */
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        font-size: 14px;
+    }
+
+    #formulario {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #formulario label,
+    #formulario input,
+    #formulario textarea {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    #formulario input[type="submit"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #main-formulario {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}

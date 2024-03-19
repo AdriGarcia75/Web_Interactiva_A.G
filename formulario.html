@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formulario.css">
+
+</head>
+<body>
+
+    <!-- cabecera de la pagina -->
+    <header>
+        <nav class="nav-main">
+            <a href="index.html">Inicio</a>
+            <a href="ventas.html">Ver Ofertas</a>
+            <a href="informacion.html">Información y comentarios</a>
+            <a href="formulario.html">Contactanos</a>
+            <input class="search-input" type="text" placeholder="Busqueda...">
+        </nav>
+    </header>
+
+    <!-- contenido principal de la pagina, en este caso el formulario -->
+    <main id="main-formulario">
+        <form id="formulario" onsubmit="return validarCorreo()">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="E-Mail" required>
+            <label for="mensaje">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="5" placeholder="Escribe tu comentario, este se mostrará en la web"></textarea>
+            <input type="submit" value="Enviar" onclick="añadirComentarioChild()">
+        </form>
+    
+        <div id="comentario-previo"></div>
+    </main>
+
+    <script src="formularioValidacion.js"></script>
+</body>
+</html>

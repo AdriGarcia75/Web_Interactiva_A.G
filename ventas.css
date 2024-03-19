@@ -1,0 +1,47 @@
+/* estilos definidos para dar cabida a las "cajitas" estilizadas abajo */
+#ventas-main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1A1A1A;
+    width: 100%;
+    height: fit-content;
+
+}
+
+/* damos distintos formatos para adecuar la presentacion de nuestras ventas, creamos una "cajita" para cada elemento */
+.caja-ventas{
+    color: black;
+    display: inline-flex;
+    background-color: azure;
+    width: fit-content;
+    height: fit-content;
+    max-width: 500px;
+    padding: 1vw;
+    border-radius: 5px;
+}
+
+/* más textos que siguen el mismo objetivo mencionado */
+.caja-texto{
+    display: block;
+}
+
+.caja-ventas img {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+/* en esta pagina solo necesitaremos una media query */
+@media only screen and (max-width: 768px) {
+
+    /* estilos para el nav, estos se heredan a cada pag ya que cada una tiene una copia del navegador en su HTML */
+
+    main {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .caja-ventas{
+        padding-bottom: 2vw;
+    }
+
+}

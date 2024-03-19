@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="informacion.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- menu de navegacion de la pagina -->
+    <nav class="nav-main">
+        <a href="index.html">Inicio</a>
+        <a href="ventas.html">Ver Ofertas</a>
+        <a href="informacion.html">Información y comentarios</a>
+        <a href="formulario.html">Contactanos</a>
+        <input class="search-input" type="text" placeholder="Busqueda...">
+    </nav>
+
+    </header>
+
+    <main id="informacion-main">
+        <div>
+            <button onclick="cambiarEstilo()">Cambiar el estilo de la pagina</button>
+
+        </div>
+        
+        <div id="informacion" style="margin-right: 50px;">
+            <div>
+                <h1>Bienvenido a Real Estate García</h1>
+                <p>En Real Estate García, somos tu destino confiable para encontrar el hogar de tus sueños. En nuestro
+                    apartado
+                    "Sobre Nosotros", te invitamos a conocer la esencia que impulsa nuestro compromiso con la excelencia
+                    en
+                    bienes raíces.</p>
+            </div>
+            <div>
+                <h1>Nuestra Misión</h1>
+                <p>En Real Estate García, nuestra misión es convertir el proceso de compra y venta de propiedades en una
+                    experiencia excepcional para nuestros clientes. Nos dedicamos a brindar asesoramiento experto y
+                    soluciones
+                    personalizadas que se ajusten a tus necesidades específicas.</p>
+            </div>
+            <div>
+                <h1>Experiencia y Profesionalismo</h1>
+                <p>Con una sólida trayectoria en el mercado inmobiliario, el equipo de Real Estate García está compuesto
+                    por
+                    profesionales apasionados comprometidos con la eficiencia y el servicio de alta calidad. Desde casas
+                    familiares hasta apartamentos modernos, gestionamos diversas propiedades con experiencia y
+                    profesionalismo.
+                </p>
+            </div>
+            <div>
+                <h1>Compromiso con la Comunidad</h1>
+                <p>En Real Estate García, no solo nos enfocamos en transacciones inmobiliarias, sino que también nos
+                    comprometemos con el bienestar de las comunidades locales. Participamos activamente en iniciativas
+                    comunitarias y colaboramos con organizaciones benéficas para marcar una diferencia positiva.</p>
+            </div>
+            <div>
+                <h1>Visión Futura</h1>
+                <p>Nuestra visión en Real Estate García es ser líderes innovadores en el mercado inmobiliario. Adoptamos
+                    tecnologías de vanguardia y tendencias emergentes para garantizar que nuestros clientes disfruten de
+                    una
+                    experiencia moderna y eficiente al encontrar su hogar perfecto.</p>
+            </div>
+        </div>
+
+        <!-- opiniones -->
+        <div id="comentario-main">
+            <h1>Añade tu comentario</h1>
+            <input type="text" id="comentarios" placeholder="Añade tu comentario">
+
+            <!-- botón para enviar los comentarios -->
+            <button onclick="añadirComentarioChild()">Enviar</button>
+
+            <!-- div que contiene los comentarios añadidos -->
+            <div id="divComentarios"></div>
+        </div>
+
+    </main>
+    <script src="addChildFormulario.js"></script>
+    <script src="cambiarEstiloInformacion.js"></script>
+</body>
+
+</html>
